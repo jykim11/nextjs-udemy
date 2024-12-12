@@ -2,5 +2,11 @@
   "$schema": "https://unpkg.com/release-it/schema/release-it.json",
   "github": {
     "release": true
+  },
+  "plugins": {
+    "@csmith/release-it-calver-plugin": {
+      "format": "yyyy.mm.minor",
+      "increment": "calendar"
+    }
   }
 }
